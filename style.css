@@ -1,1 +1,136 @@
+/* ESTILOS GENERALES */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* ENCABEZADO */
+.encabezado {
+    background: linear-gradient(135deg, #ffb703, #fb8500);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.descripcion {
+    max-width: 700px;
+    margin: 15px auto 30px;
+}
+
+.mision-vision {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.mision-vision div {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 300px;
+}
+
+/* SECCIÓN PERRITOS */
+.proyectos {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contenedor-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.proyecto {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.proyecto:hover {
+    transform: translateY(-5px);
+}
+
+.proyecto img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.proyecto h3 {
+    margin: 15px 0 5px;
+}
+
+.proyecto p {
+    padding: 0 15px 20px;
+}
+
+/* CONTACTO */
+.contacto {
+    background-color: #e9ecef;
+    padding: 60px 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    background-color: #fb8500;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffb703;
+}
+
+/* PIE DE PÁGINA */
+.pie {
+    background-color: #023047;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.redes a {
+    color: #ffb703;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .mision-vision {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
